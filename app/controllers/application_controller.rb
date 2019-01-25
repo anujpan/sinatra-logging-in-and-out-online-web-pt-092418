@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    @user = Heloers.current_user
+    @user = Heloers.current_user(session)
   end
 
   get '/logout' do
