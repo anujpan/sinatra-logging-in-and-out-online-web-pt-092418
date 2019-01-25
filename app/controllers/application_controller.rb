@@ -12,6 +12,7 @@ class ApplicationController < Sinatra::Base
 
   post '/login' do
     @user = User.params
+    binding.pry
   end
 
   get '/account' do
